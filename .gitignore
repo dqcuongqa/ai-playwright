@@ -4,3 +4,4 @@ playwright-report/
 screenshots/
 .env
 package-lock.json
+.DS_Store
