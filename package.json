@@ -1,0 +1,30 @@
+{
+  "name": "ai-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:chrome": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "report": "playwright show-report test-results/html-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dqcuongqa/ai-playwright.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/dqcuongqa/ai-playwright/issues"
+  },
+  "homepage": "https://github.com/dqcuongqa/ai-playwright#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "playwright": "^1.58.2"
+  }
+}
