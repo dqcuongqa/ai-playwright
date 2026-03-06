@@ -73,10 +73,10 @@ test.describe.skip('Create Bulk Tasks - 10 Tasks', () => {
                 
                 if ([200, 201].includes(response.status()) && body.success) {
                     successCount++;
-                    console.log(`✅ Task ${i}/10 created successfully - ID: ${body.data?.id}`);
+                    console.log(`Task ${i}/10 created successfully - ID: ${body.data?.id}`);
                 } else {
                     failCount++;
-                    console.log(`❌ Task ${i}/10 failed - Status: ${response.status()}`);
+                    console.log(`Task ${i}/10 failed - Status: ${response.status()}`);
                 }
 
                 results.push({
@@ -88,7 +88,7 @@ test.describe.skip('Create Bulk Tasks - 10 Tasks', () => {
 
             } catch (error: any) {
                 failCount++;
-                console.log(`❌ Task ${i}/10 error: ${error?.message || error}`);
+                console.log(`Task ${i}/10 error: ${error?.message || error}`);
                 results.push({
                     taskNumber: i,
                     error: error?.message || String(error)
@@ -98,8 +98,8 @@ test.describe.skip('Create Bulk Tasks - 10 Tasks', () => {
 
         console.log('\n=== Bulk Task Creation Summary ===');
         console.log(`Total tasks: 10`);
-        console.log(`✅ Success: ${successCount}`);
-        console.log(`❌ Failed: ${failCount}`);
+        console.log(`Success: ${successCount}`);
+        console.log(`Failed: ${failCount}`);
         console.log(`Success rate: ${(successCount / 10 * 100).toFixed(2)}%`);
 
         // Expect at least 8/10 success rate (80%)

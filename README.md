@@ -35,7 +35,7 @@ API_USERNAME=your_username
 API_PASSWORD=your_password
 ```
 
-⚠️ **LƯU Ý**: File `.env` chứa thông tin nhạy cảm và đã được thêm vào `.gitignore`. KHÔNG commit file này lên Git.
+**LƯU Ý**: File `.env` chứa thông tin nhạy cảm và đã được thêm vào `.gitignore`. KHÔNG commit file này lên Git.
 
 ## Chạy tests
 
