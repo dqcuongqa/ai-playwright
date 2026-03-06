@@ -2,12 +2,12 @@
 Automation testing framework for API testing using **Playwright** and **Node.js**.
 ## Project Structure
 ├── API/
-│ ├── happy-case/ # Positive test cases
-│ └── unhappy-case/ # Negative test cases
-├── pages/ # Page Object Models
-├── tests/ # Test scripts
-├── utils/ # Helper functions
-├── test-results/ # Test reports
+│   ├── happy-case/
+│   └── unhappy-case/
+├── pages/
+├── tests/
+├── utils/
+├── test-results/
 ├── playwright.config.js
 ├── package.json
 └── .env.example
