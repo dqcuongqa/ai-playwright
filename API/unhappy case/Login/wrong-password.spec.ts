@@ -1,11 +1,11 @@
-import { test, expect } from '@playwright/test';
+﻿import { test, expect } from '@playwright/test';
 
 test.describe('Login API - Wrong Password', () => {
     test('Should fail to login with wrong password', async ({ request, baseURL }) => {
         const response = await request.post(`${baseURL}/api/v1/auths/login`, {
             data: {
                 username: process.env.API_USERNAME,
-                password: 'wrongpassword123',
+                password: 'wrongpassword',
             },
         });
 
