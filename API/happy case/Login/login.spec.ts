@@ -12,13 +12,13 @@ test.describe('Login API - Happy Cases', () => {
             },
         });
 
-        Expecting HTTP status code 200
+       // Expecting HTTP status code 200
         expect(response.status()).toBe(200);
 
         const responseBody = await response.json();
         console.log('Success Response:', responseBody);
 
-        Assert that a token is returned in the response
+        //Assert that a token is returned in the response
         const token = responseBody.token || responseBody.accessToken || responseBody?.data?.token || responseBody?.data?.accessToken;
 
         expect(token, 'Expected response to contain a token').toBeDefined();
