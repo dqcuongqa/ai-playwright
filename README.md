@@ -1,9 +1,10 @@
 # AI Playwright Automation
 Automation testing framework for API testing using **Playwright** and **Node.js**.
 ## Project Structure
+
 ├── API/
-│   ├── happy-case/
-│   └── unhappy-case/
+│ ├── happy-case/
+│ └── unhappy-case/
 ├── pages/
 ├── tests/
 ├── utils/
