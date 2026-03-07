@@ -29,8 +29,6 @@ test.describe('Get User Profile API - Happy Case', () => {
 
         expect(response.status()).toBe(200);
 
-        // Additional assertions stringently checking if the required properties exist
-        // E.g. expect(body).toHaveProperty('email');
-        // E.g. expect(body).toHaveProperty('role');
+     
     });
 });
